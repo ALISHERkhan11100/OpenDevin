@@ -20,7 +20,7 @@ class AgentRecallAction(ExecutableAction):
 
     async def run(self, controller: 'AgentController') -> AgentRecallObservation:
         return AgentRecallObservation(
-            content='Recalling memories...',
+            content='',
             memories=controller.agent.search_memory(self.query),
         )
 
